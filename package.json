@@ -1,0 +1,40 @@
+{
+  "name": "per-calendar",
+  "version": "1.0.0",
+  "description": "A perpetual calendar library.",
+  "main": "/lib/per-calendar.min.js",
+  "files": [
+    "lib",
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jl15988/perpetual-calendar.git"
+  },
+  "typings": "/types/index.d.ts",
+  "keywords": [
+    "per-calendar",
+    "perpetual-calendar",
+    "calendar",
+    "日历",
+    "万年历"
+  ],
+  "author": "jl15988",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jl15988/perpetual-calendar/issues"
+  },
+  "homepage": "https://github.com/jl15988/perpetual-calendar#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
