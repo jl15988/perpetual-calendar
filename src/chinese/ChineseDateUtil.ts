@@ -1,10 +1,10 @@
-import JulianDay from "./JulianDay";
-import JN from "./data/JN";
-import JR from "./data/JR";
-import SSQ from "./SSQ";
-import {JRW} from "./data/JRW";
-import Ephemeris from "./Ephemeris";
-import lunar2solar from "./lunar2solar";
+import JulianDay from "../JulianDay";
+import JN from "../data/JN";
+import JR from "../data/JR";
+import SSQ from "../SSQ";
+import {JRW} from "../data/JRW";
+import Ephemeris from "../Ephemeris";
+import lunar2solar from "../lunar2solar";
 
 function int2(v) {
     return Math.floor(v);

@@ -1,10 +1,20 @@
 import values from "./values";
-import ChineseDate from "./ChineseDate";
-import ChineseDateUtil from "./ChineseDateUtil";
+import ChineseDate from "./chinese/ChineseDate";
+import ChineseDateUtil from "./chinese/ChineseDateUtil";
+import ChineseZodiacRefe from "./reference/ChineseZodiacRefe";
+import GanZhiRefe from "./reference/GanZhiRefe";
+import SolarTermsRefe from "./reference/SolarTermsRefe";
+import TimeIntervalRefe from "./reference/TimeIntervalRefe";
+import WeekRefe from "./reference/WeekRefe";
 
 export {
     ChineseDate,
-    ChineseDateUtil
+    ChineseDateUtil,
+    ChineseZodiacRefe,
+    GanZhiRefe,
+    SolarTermsRefe,
+    TimeIntervalRefe,
+    WeekRefe
 }
 
 const perCalendar = values;

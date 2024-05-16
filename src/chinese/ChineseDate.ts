@@ -13,11 +13,16 @@ class ChineseDate {
     day: number;
     dayAllInfo: DayAllInfo;
 
-    constructor(yearOrDate: number | Date);
-    constructor(yearOrDate: number | Date, month: number);
-    constructor(yearOrDate: number | Date, month: number, day: number);
+    constructor();
+    constructor(date: Date);
+    constructor(year: number);
+    constructor(year: number, month: number);
+    constructor(year: number, month: number, day: number);
 
-    constructor(yearOrDate: number | Date, month?: number, day?: number) {
+    constructor(yearOrDate?: number | Date, month?: number, day?: number) {
+        if (!yearOrDate){
+            return new ChineseDate(new Date());
+        }
         if (yearOrDate instanceof Date) {
             this.year = yearOrDate.getFullYear();
             this.month = yearOrDate.getMonth() + 1;
@@ -32,18 +37,18 @@ class ChineseDate {
     }
 
     /**
-     * 通过农历构建
+     * 通过农历年构建，默认一月初一
      * @param chineseYear 农历年
      */
     static fromLunar(chineseYear: number);
     /**
-     * 通过农历构建
+     * 通过农历年月构建，默认初一
      * @param chineseYear 农历年
      * @param chineseMonth 农历月
      */
     static fromLunar(chineseYear: number, chineseMonth: number);
     /**
-     * 通过农历构建
+     * 通过农历年月日构建
      * @param chineseYear 农历年
      * @param chineseMonth 农历月
      * @param chineseDay 农历日
@@ -62,6 +67,44 @@ class ChineseDate {
         const month = date.getMonth() + 1;
         const day = date.getDate();
         return new ChineseDate(year, month, day);
+    }
+
+    /**
+     * 通过公历日期构建
+     * @param date 公历年
+     */
+    static fromSolar(date: Date);
+
+    /**
+     * 通过公历年构建，默认1月1日
+     * @param year 公历年
+     */
+    static fromSolar(year: number);
+    /**
+     * 通过公历年月构建，默认1日
+     * @param year 公历年
+     * @param month 公历月
+     */
+    static fromSolar(year: number, month: number);
+    /**
+     * 通过公历年月日构建
+     * @param year 公历年
+     * @param month 公历月
+     * @param day 公历日
+     */
+    static fromSolar(year: number, month: number, day: number);
+
+    /**
+     * 通过公历构建
+     * @param yearOrDate 公历年或公历日期
+     * @param month 公历月
+     * @param day 公历日
+     */
+    static fromSolar(yearOrDate: number | Date, month?: number, day?: number) {
+        if (yearOrDate instanceof Date) {
+            return new ChineseDate(yearOrDate);
+        }
+        return new ChineseDate(yearOrDate, month, day);
     }
 
     _check(): void {

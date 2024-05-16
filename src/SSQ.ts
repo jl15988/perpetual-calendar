@@ -2,7 +2,7 @@ import SUO from "./data/SUO";
 import QI from "./data/QI";
 import JulianDay from "./JulianDay";
 import Ephemeris from "./Ephemeris";
-import ChineseDate from "./ChineseDateUtil";
+import ChineseDate from "./chinese/ChineseDateUtil";
 
 function int2(v) {
     return Math.floor(v);

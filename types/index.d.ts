@@ -1,6 +1,6 @@
 import values from "./values";
-import ChineseDate from "./ChineseDate";
-import ChineseDateUtil from "./ChineseDateUtil";
+import ChineseDate from "./chinese/ChineseDate";
+import ChineseDateUtil from "./chinese/ChineseDateUtil";
 export { ChineseDate, ChineseDateUtil };
 declare const perCalendar: typeof values;
 export default perCalendar;
