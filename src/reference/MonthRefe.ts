@@ -2,6 +2,7 @@
  * 月参照表
  */
 class MonthRefe {
+    // 月名
     names = ['十一', '十二', '正', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
 
     getName(index: number): string {

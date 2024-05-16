@@ -2,6 +2,7 @@
  * 月相参照表
  */
 class LunarPhaseRefe {
+    // 月相名
     names = ["朔", "上弦", "望", "下弦"];
 
     getValue(index: number): string {

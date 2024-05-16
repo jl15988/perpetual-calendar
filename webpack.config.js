@@ -12,7 +12,7 @@ module.exports = {
         filename: 'per-calendar.min.js',//默认情况下创建的文件名
         // chunkFilename: '[name].js',
         path: path.resolve(__dirname, 'lib'),
-        library: "per-calendar",
+        library: "perCalendar",
         libraryTarget: "umd",
         libraryExport: "default"
     },
@@ -51,7 +51,7 @@ module.exports = {
             terserOptions: {
                 compress: {
                     warnings: false,
-                    drop_console: true, // 去除console
+                    // drop_console: true, // 去除console
                     drop_debugger: true, // 去除debugger
                 },
             },
