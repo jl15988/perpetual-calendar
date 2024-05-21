@@ -8,6 +8,7 @@ import TimeIntervalRefe from "./reference/TimeIntervalRefe";
 import WeekRefe from "./reference/WeekRefe";
 import NumberRefe from "./reference/NumberRefe";
 import ChronologyRefe from "./reference/ChronologyRefe";
+import FestivalRefe from "./reference/FestivalRefe";
 
 export {
     ChineseDate,
@@ -18,7 +19,8 @@ export {
     TimeIntervalRefe,
     WeekRefe,
     NumberRefe,
-    ChronologyRefe
+    ChronologyRefe,
+    FestivalRefe
 }
 
 const perCalendar = values;
