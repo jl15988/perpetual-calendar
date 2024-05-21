@@ -16,12 +16,6 @@ declare class NumberRefe {
     romanCrt: number[];
     romans: string[];
     /**
-     * 通过数字获取中文数字
-     * @param number 数字
-     */
-    getChineseName(number: number): string;
-    numberToChinese(num: any): string;
-    /**
      * 根据数字获取罗马数字
      * @param number 数字
      */

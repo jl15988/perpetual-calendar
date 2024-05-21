@@ -7,6 +7,7 @@ import SolarTermsRefe from "./reference/SolarTermsRefe";
 import TimeIntervalRefe from "./reference/TimeIntervalRefe";
 import WeekRefe from "./reference/WeekRefe";
 import NumberRefe from "./reference/NumberRefe";
+import ChronologyRefe from "./reference/ChronologyRefe";
 
 export {
     ChineseDate,
@@ -16,7 +17,8 @@ export {
     SolarTermsRefe,
     TimeIntervalRefe,
     WeekRefe,
-    NumberRefe
+    NumberRefe,
+    ChronologyRefe
 }
 
 const perCalendar = values;

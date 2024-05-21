@@ -7,6 +7,7 @@ import SolarTermsRefe from "./reference/SolarTermsRefe";
 import TimeIntervalRefe from "./reference/TimeIntervalRefe";
 import WeekRefe from "./reference/WeekRefe";
 import NumberRefe from "./reference/NumberRefe";
-export { ChineseDate, ChineseDateUtil, ChineseZodiacRefe, GanZhiRefe, SolarTermsRefe, TimeIntervalRefe, WeekRefe, NumberRefe };
+import ChronologyRefe from "./reference/ChronologyRefe";
+export { ChineseDate, ChineseDateUtil, ChineseZodiacRefe, GanZhiRefe, SolarTermsRefe, TimeIntervalRefe, WeekRefe, NumberRefe, ChronologyRefe };
 declare const perCalendar: typeof values;
 export default perCalendar;
