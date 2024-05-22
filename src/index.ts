@@ -9,6 +9,7 @@ import WeekRefe from "./reference/WeekRefe";
 import NumberRefe from "./reference/NumberRefe";
 import ChronologyRefe from "./reference/ChronologyRefe";
 import FestivalRefe from "./reference/FestivalRefe";
+import PerDateUtil from "./utils/PerDateUtil";
 
 export {
     ChineseDate,
@@ -20,7 +21,8 @@ export {
     WeekRefe,
     NumberRefe,
     ChronologyRefe,
-    FestivalRefe
+    FestivalRefe,
+    PerDateUtil
 }
 
 const perCalendar = values;
