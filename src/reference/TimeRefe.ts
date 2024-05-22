@@ -71,3 +71,5 @@ class TimeRefe {
         return this.getTimeInterval(date.getHours());
     }
 }
+
+export default new TimeRefe()

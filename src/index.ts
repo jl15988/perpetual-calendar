@@ -4,7 +4,7 @@ import ChineseDateUtil from "./chinese/ChineseDateUtil";
 import ChineseZodiacRefe from "./reference/ChineseZodiacRefe";
 import GanZhiRefe from "./reference/GanZhiRefe";
 import SolarTermsRefe from "./reference/SolarTermsRefe";
-import TimeIntervalRefe from "./reference/TimeIntervalRefe";
+import TimeRefe from "./reference/TimeRefe";
 import WeekRefe from "./reference/WeekRefe";
 import NumberRefe from "./reference/NumberRefe";
 import ChronologyRefe from "./reference/ChronologyRefe";
@@ -17,7 +17,7 @@ export {
     ChineseZodiacRefe,
     GanZhiRefe,
     SolarTermsRefe,
-    TimeIntervalRefe,
+    TimeRefe,
     WeekRefe,
     NumberRefe,
     ChronologyRefe,
